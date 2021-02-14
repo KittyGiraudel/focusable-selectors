@@ -1,0 +1,30 @@
+{
+  "name": "focusable-selectors",
+  "version": "1.0.0",
+  "description": "A list of CSS selectors for focusable elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HugoGiraudel/focusable-selectors.git"
+  },
+  "keywords": [
+    "css",
+    "selectors",
+    "focus",
+    "a11y"
+  ],
+  "author": {
+    "name": "Kitty Giraudel",
+    "url": "https://hugogiraudel.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HugoGiraudel/focusable-selectors/issues"
+  },
+  "files": [
+    "index.js"
+  ]
+}
