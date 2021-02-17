@@ -3,6 +3,8 @@
 module.exports = [
   'a[href]:not([tabindex^="-"]):not([inert])',
   'area[href]:not([tabindex^="-"]):not([inert])',
+  'object:not([inert])',
+  'embed:not([inert])',
   'input:not([disabled]):not([inert])',
   'select:not([disabled]):not([inert])',
   'textarea:not([disabled]):not([inert])',
