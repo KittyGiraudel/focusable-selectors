@@ -24,3 +24,5 @@ To have a single CSS selector out of it, join the array with commas:
 const selector = selectors.join(',')
 const focusableElements = document.querySelectorAll(selector)
 ```
+
+For a more advanced solution using JavaScript and covering more edge cases, refer to [focus-trap/tabbable](https://github.com/focus-trap/tabbable).
