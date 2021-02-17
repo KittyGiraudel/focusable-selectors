@@ -1,6 +1,6 @@
 {
   "name": "focusable-selectors",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A list of CSS selectors for focusable elements",
   "main": "index.js",
   "repository": {
