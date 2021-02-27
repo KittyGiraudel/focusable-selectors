@@ -3,7 +3,8 @@
 module.exports = [
   'a[href]:not([tabindex^="-"])',
   'area[href]:not([tabindex^="-"])',
-  'input:not([type="hidden"]):not([disabled])',
+  'input:not([type="hidden"]):not([type="radio"]):not([disabled])',
+  'input[type="radio"]:not([disabled]):checked',
   'select:not([disabled])',
   'textarea:not([disabled])',
   'button:not([disabled])',
