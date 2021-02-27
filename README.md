@@ -7,7 +7,6 @@ It supports:
 - All natively focusable elements,
 - … and any element with the `contenteditable` attribute,
 - … provided they do not have the `disabled` attribute (if they even can),
-- … and do not have the [`inert` attribute](https://wicg.github.io/inert/explainer.html),
 - … and do not have a negative `tabindex` attribute.
 
 ```sh

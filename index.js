@@ -1,15 +1,15 @@
 'use strict'
 
 module.exports = [
-  'a[href]:not([tabindex^="-"]):not([inert])',
-  'area[href]:not([tabindex^="-"]):not([inert])',
-  'input:not([type="hidden"]):not([disabled]):not([inert])',
-  'select:not([disabled]):not([inert])',
-  'textarea:not([disabled]):not([inert])',
-  'button:not([disabled]):not([inert])',
-  'iframe:not([tabindex^="-"]):not([inert])',
-  'audio[controls]:not([tabindex^="-"]):not([inert])',
-  'video[controls]:not([tabindex^="-"]):not([inert])',
-  '[contenteditable]:not([tabindex^="-"]):not([inert])',
-  '[tabindex]:not([tabindex^="-"]):not([inert])',
+  'a[href]:not([tabindex^="-"])',
+  'area[href]:not([tabindex^="-"])',
+  'input:not([type="hidden"]):not([disabled])',
+  'select:not([disabled])',
+  'textarea:not([disabled])',
+  'button:not([disabled])',
+  'iframe:not([tabindex^="-"])',
+  'audio[controls]:not([tabindex^="-"])',
+  'video[controls]:not([tabindex^="-"])',
+  '[contenteditable]:not([tabindex^="-"])',
+  '[tabindex]:not([tabindex^="-"])',
 ]
