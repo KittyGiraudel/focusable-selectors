@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/HugoGiraudel/focusable-selectors.git"
+    "url": "https://github.com/KittyGiraudel/focusable-selectors.git"
   },
   "keywords": [
     "css",
@@ -15,11 +15,11 @@
   ],
   "author": {
     "name": "Kitty Giraudel",
-    "url": "https://hugogiraudel.com"
+    "url": "https://kittygiraudel.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HugoGiraudel/focusable-selectors/issues"
+    "url": "https://github.com/KittyGiraudel/focusable-selectors/issues"
   },
   "files": [
     "index.js"
