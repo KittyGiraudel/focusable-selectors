@@ -24,6 +24,7 @@
     "url": "https://github.com/KittyGiraudel/focusable-selectors/issues"
   },
   "files": [
+    "index.d.ts",
     "index.js",
     "index.mjs"
   ]
