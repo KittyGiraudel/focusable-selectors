@@ -1,4 +1,4 @@
 declare module 'focusable-selectors' {
-  const FocusableSelectors: Array<string>
-  export default FocusableSelectors
+  const focusableSelectors: Array<string>
+  export default focusableSelectors
 }
