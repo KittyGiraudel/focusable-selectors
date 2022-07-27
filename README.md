@@ -1,6 +1,6 @@
 # Focusable Selectors
 
-`focusable-selectors` is a micro-lib exporting an array of CSS selectors for focusable HTML elements. Figuring out which element can be focused is not always trivial and is sometimes necessary to build fully accessible widgets such as [a11y-dialog](https://github.com/edenspiekermann/a11y-dialog).
+`focusable-selectors` is a micro-lib exporting an array of CSS selectors for focusable HTML elements. Figuring out which element can be focused is not always trivial and is sometimes necessary to build fully accessible widgets such as [a11y-dialog](https://github.com/KittyGiraudel/a11y-dialog).
 
 It supports:
 
