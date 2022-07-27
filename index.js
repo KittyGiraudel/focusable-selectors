@@ -1,3 +1,5 @@
+'use strict'
+
 const notInertNegativeTabindex = ':not([inert]):not([tabindex^="-"])'
 const notInertNegativeTabIndexDisabled = `${notInertNegativeTabindex}:not([disabled])`
 
