@@ -129,7 +129,7 @@ describe('<details> elements', () => {
   const selector = focusableSelectors.find(
     selector =>
       selector.startsWith('details') &&
-      !selector.startsWith('details > summary')
+      !selector.includes('summary:first-of-type')
   )
 
   it('should only include elements without a summary', () => {
@@ -147,7 +147,7 @@ describe('<details> elements', () => {
 
 describe('<summary> elements', () => {
   const selector = focusableSelectors.find(selector =>
-    selector.startsWith('details > summary')
+    selector.includes('summary:first-of-type')
   )
 
   it('should only include elements that are first of type', () => {
