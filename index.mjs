@@ -1,14 +1,17 @@
+const notInertNegativeTabindex = ':not([inert]):not([tabindex^="-"])'
+const notInertNegativeTabIndexDisabled = `${notInertNegativeTabindex}:not([disabled])`
+
 export default [
-  'a[href]:not([tabindex^="-"])',
-  'area[href]:not([tabindex^="-"])',
-  'input:not([type="hidden"]):not([type="radio"]):not([disabled]):not([tabindex^="-"])',
-  'input[type="radio"]:not([disabled]):not([tabindex^="-"])',
-  'select:not([disabled]):not([tabindex^="-"])',
-  'textarea:not([disabled]):not([tabindex^="-"])',
-  'button:not([disabled]):not([tabindex^="-"])',
-  'iframe:not([tabindex^="-"])',
-  'audio[controls]:not([tabindex^="-"])',
-  'video[controls]:not([tabindex^="-"])',
-  '[contenteditable]:not([tabindex^="-"])',
-  '[tabindex]:not([tabindex^="-"])',
+  `a[href]${notInertNegativeTabindex}`,
+  `area[href]${notInertNegativeTabindex}`,
+  `input:not([type="hidden"]):not([type="radio"])${notInertNegativeTabIndexDisabled}`,
+  `input[type="radio"]${notInertNegativeTabIndexDisabled}`,
+  `select${notInertNegativeTabIndexDisabled}`,
+  `textarea${notInertNegativeTabIndexDisabled}`,
+  `button${notInertNegativeTabIndexDisabled}`,
+  `iframe${notInertNegativeTabindex}`,
+  `audio[controls]${notInertNegativeTabindex}`,
+  `video[controls]${notInertNegativeTabindex}`,
+  `[contenteditable]${notInertNegativeTabindex}`,
+  `[tabindex]${notInertNegativeTabindex}`,
 ]
