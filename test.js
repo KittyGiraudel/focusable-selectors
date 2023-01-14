@@ -125,6 +125,44 @@ describe('<button> elements', () => {
   })
 })
 
+describe('<details> elements', () => {
+  const selector = focusableSelectors.find(
+    selector =>
+      selector.startsWith('details') &&
+      !selector.startsWith('details > summary')
+  )
+
+  it('should only include elements without a summary', () => {
+    assert.match(selector, re(':not(:has(> summary))'))
+  })
+
+  it('should only include elements without [inert]', () => {
+    assert.match(selector, re(':not([inert])'))
+  })
+
+  it('should only include elements without negative [tabindex]', () => {
+    assert.match(selector, re(':not([tabindex^="-"])'))
+  })
+})
+
+describe('<summary> elements', () => {
+  const selector = focusableSelectors.find(selector =>
+    selector.startsWith('details > summary')
+  )
+
+  it('should only include elements that are first of type', () => {
+    assert.match(selector, re('summary:first-of-type'))
+  })
+
+  it('should only include elements without [inert]', () => {
+    assert.match(selector, re(':not([inert])'))
+  })
+
+  it('should only include elements without negative [tabindex]', () => {
+    assert.match(selector, re(':not([tabindex^="-"])'))
+  })
+})
+
 describe('<iframe> elements', () => {
   const selector = focusableSelectors.find(selector =>
     selector.startsWith('iframe')
