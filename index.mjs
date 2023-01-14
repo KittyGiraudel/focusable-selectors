@@ -12,6 +12,8 @@ export default [
   `select${not.inert}${not.negTabIndex}${not.disabled}`,
   `textarea${not.inert}${not.negTabIndex}${not.disabled}`,
   `button${not.inert}${not.negTabIndex}${not.disabled}`,
+  `details > summary:first-of-type${not.inert}${not.negTabIndex}`,
+  `details:not(:has(> summary))${not.inert}${not.negTabIndex}`,
   `iframe${not.inert}${not.negTabIndex}`,
   `audio[controls]${not.inert}${not.negTabIndex}`,
   `video[controls]${not.inert}${not.negTabIndex}`,
