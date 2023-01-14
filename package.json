@@ -27,5 +27,8 @@
     "index.d.ts",
     "index.js",
     "index.mjs"
-  ]
+  ],
+  "scripts": {
+    "test": "node test.js"
+  }
 }
