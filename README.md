@@ -7,7 +7,8 @@ It supports:
 - All natively focusable elements,
 - … and any element with the `contenteditable` attribute,
 - … provided they do not have the `disabled` attribute (if they even can),
-- … and do not have a negative `tabindex` attribute or (`inert` attribute)[https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert].
+- … and do not have a negative `tabindex` attribute,
+- … and do not have the [`inert` attribute](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/inert).
 
 For a more advanced solution using JavaScript and covering more edge cases, refer to [focus-trap/tabbable](https://github.com/focus-trap/tabbable).
 
@@ -27,7 +28,6 @@ To have a single CSS selector out of it, join the array with commas:
 const selector = selectors.join(',')
 const focusableElements = document.querySelectorAll(selector)
 ```
-
 
 ## Considering styles
 
