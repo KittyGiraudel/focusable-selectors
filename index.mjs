@@ -1,7 +1,7 @@
 const not = {
   inert: ':not([inert])',
   negTabIndex: ':not([tabindex^="-"])',
-  disabled: ':not([disabled])',
+  disabled: ':not(:disabled)',
 }
 
 export default [
