@@ -66,8 +66,8 @@ describe('<input> (non-radio) elements', () => {
     assert.match(selector, re(':not([tabindex^="-"])'))
   })
 
-  it('should only include elements not [disabled]', () => {
-    assert.match(selector, re(':not([disabled])'))
+  it('should only include elements not :disabled', () => {
+    assert.match(selector, re(':not(:disabled)'))
   })
 })
 
@@ -84,8 +84,8 @@ describe('<input> (radio) elements', () => {
     assert.match(selector, re(':not([tabindex^="-"])'))
   })
 
-  it('should only include elements not [disabled]', () => {
-    assert.match(selector, re(':not([disabled])'))
+  it('should only include elements not :disabled', () => {
+    assert.match(selector, re(':not(:disabled)'))
   })
 })
 
@@ -102,8 +102,8 @@ describe('<textarea> elements', () => {
     assert.match(selector, re(':not([tabindex^="-"])'))
   })
 
-  it('should only include elements not [disabled]', () => {
-    assert.match(selector, re(':not([disabled])'))
+  it('should only include elements not :disabled', () => {
+    assert.match(selector, re(':not(:disabled)'))
   })
 })
 
@@ -120,8 +120,8 @@ describe('<button> elements', () => {
     assert.match(selector, re(':not([tabindex^="-"])'))
   })
 
-  it('should only include elements not [disabled]', () => {
-    assert.match(selector, re(':not([disabled])'))
+  it('should only include elements not :disabled', () => {
+    assert.match(selector, re(':not(:disabled)'))
   })
 })
 
