@@ -125,7 +125,9 @@ describe('<button> elements', () => {
   })
 })
 
-describe('<details> elements', () => {
+// Discard until Firefox supports `:has()`
+// See: https://github.com/KittyGiraudel/focusable-selectors/issues/12
+describe.skip('<details> elements', () => {
   const selector = focusableSelectors.find(
     selector =>
       selector.startsWith('details') &&
