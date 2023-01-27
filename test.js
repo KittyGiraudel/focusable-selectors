@@ -1,6 +1,6 @@
-const { describe, it } = require('node:test')
-const { strict: assert } = require('node:assert')
-const focusableSelectors = require('./')
+import { describe, it } from 'node:test'
+import { strict as assert } from 'node:assert'
+import focusableSelectors from './index.mjs'
 
 const escapeRegExp = string => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const re = string => new RegExp(escapeRegExp(string))
