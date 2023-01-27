@@ -1,7 +1,7 @@
 'use strict'
 
 const not = {
-  inert: ':not([inert])',
+  inert: ':not([inert]):not([inert] *)',
   negTabIndex: ':not([tabindex^="-"])',
   disabled: ':not(:disabled)',
 }
