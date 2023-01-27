@@ -15,8 +15,9 @@ describe('<a> elements', () => {
     assert.doesNotMatch(selector, re(':not([href])'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -34,8 +35,9 @@ describe('<area> elements', () => {
     assert.doesNotMatch(selector, re(':not([href])'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -58,8 +60,9 @@ describe('<input> (non-radio) elements', () => {
     assert.match(selector, re(':not([type="hidden"])'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -76,8 +79,9 @@ describe('<input> (radio) elements', () => {
     selector.startsWith('input[type="radio"]')
   )
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -94,8 +98,9 @@ describe('<textarea> elements', () => {
     selector.startsWith('textarea')
   )
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -112,8 +117,9 @@ describe('<button> elements', () => {
     selector.startsWith('button')
   )
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -138,8 +144,9 @@ describe.skip('<details> elements', () => {
     assert.match(selector, re(':not(:has(> summary))'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -156,8 +163,9 @@ describe('<summary> elements', () => {
     assert.match(selector, re('summary:first-of-type'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -170,8 +178,9 @@ describe('<iframe> elements', () => {
     selector.startsWith('iframe')
   )
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -189,8 +198,9 @@ describe('<audio> elements', () => {
     assert.doesNotMatch(selector, re(':not([controls])'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -208,8 +218,9 @@ describe('<video> elements', () => {
     assert.doesNotMatch(selector, re(':not([controls])'))
   })
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -222,8 +233,9 @@ describe('[contenteditable] elements', () => {
     selector.startsWith('[contenteditable]')
   )
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
@@ -236,8 +248,9 @@ describe('[tabindex] elements', () => {
     selector.startsWith('[tabindex]')
   )
 
-  it('should only include elements without [inert]', () => {
+  it('should only include not inert elements', () => {
     assert.match(selector, re(':not([inert])'))
+    assert.match(selector, re(':not([inert] *)'))
   })
 
   it('should only include elements without negative [tabindex]', () => {
