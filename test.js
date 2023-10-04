@@ -1,6 +1,6 @@
 import { describe, it } from 'node:test'
 import { strict as assert } from 'node:assert'
-import focusableSelectors from './index.mjs'
+import focusableSelectors from './index.js'
 
 const escapeRegExp = string => string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 const re = string => new RegExp(escapeRegExp(string))

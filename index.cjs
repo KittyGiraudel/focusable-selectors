@@ -1,10 +1,12 @@
+'use strict'
+
 const not = {
   inert: ':not([inert]):not([inert] *)',
   negTabIndex: ':not([tabindex^="-"])',
   disabled: ':not(:disabled)',
 }
 
-export default [
+module.exports = [
   `a[href]${not.inert}${not.negTabIndex}`,
   `area[href]${not.inert}${not.negTabIndex}`,
   `input:not([type="hidden"]):not([type="radio"])${not.inert}${not.negTabIndex}${not.disabled}`,
