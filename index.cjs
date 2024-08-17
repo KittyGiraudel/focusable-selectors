@@ -1,26 +1,24 @@
 'use strict'
 
-const not = {
-  inert: ':not([inert]):not([inert] *)',
-  negTabIndex: ':not([tabindex^="-"])',
-  disabled: ':not(:disabled)',
-}
+const notInert = ':not([inert]):not([inert] *)'
+const notNegTabIndex = ':not([tabindex^="-"])'
+const notDisabled = ':not(:disabled)'
 
 module.exports = [
-  `a[href]${not.inert}${not.negTabIndex}`,
-  `area[href]${not.inert}${not.negTabIndex}`,
-  `input:not([type="hidden"]):not([type="radio"])${not.inert}${not.negTabIndex}${not.disabled}`,
-  `input[type="radio"]${not.inert}${not.negTabIndex}${not.disabled}`,
-  `select${not.inert}${not.negTabIndex}${not.disabled}`,
-  `textarea${not.inert}${not.negTabIndex}${not.disabled}`,
-  `button${not.inert}${not.negTabIndex}${not.disabled}`,
-  `details${not.inert} > summary:first-of-type${not.negTabIndex}`,
+  `a[href]${notInert}${notNegTabIndex}`,
+  `area[href]${notInert}${notNegTabIndex}`,
+  `input:not([type="hidden"]):not([type="radio"])${notInert}${notNegTabIndex}${notDisabled}`,
+  `input[type="radio"]${notInert}${notNegTabIndex}${notDisabled}`,
+  `select${notInert}${notNegTabIndex}${notDisabled}`,
+  `textarea${notInert}${notNegTabIndex}${notDisabled}`,
+  `button${notInert}${notNegTabIndex}${notDisabled}`,
+  `details${notInert} > summary:first-of-type${notNegTabIndex}`,
   // Discard until Firefox supports `:has()`
   // See: https://github.com/KittyGiraudel/focusable-selectors/issues/12
-  // `details:not(:has(> summary))${not.inert}${not.negTabIndex}`,
-  `iframe${not.inert}${not.negTabIndex}`,
-  `audio[controls]${not.inert}${not.negTabIndex}`,
-  `video[controls]${not.inert}${not.negTabIndex}`,
-  `[contenteditable]${not.inert}${not.negTabIndex}`,
-  `[tabindex]${not.inert}${not.negTabIndex}`,
+  // `details:not(:has(> summary))${notInert}${notNegTabIndex}`,
+  `iframe${notInert}${notNegTabIndex}`,
+  `audio[controls]${notInert}${notNegTabIndex}`,
+  `video[controls]${notInert}${notNegTabIndex}`,
+  `[contenteditable]${notInert}${notNegTabIndex}`,
+  `[tabindex]${notInert}${notNegTabIndex}`,
 ]
